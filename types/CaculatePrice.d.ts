@@ -10,3 +10,5 @@ interface Order {
     /* 运费 */
     freight: number | undefined
 }
+
+type Ref<T> = import('vue').Ref<T>

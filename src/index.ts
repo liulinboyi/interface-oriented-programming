@@ -2,6 +2,7 @@ import { Double11CaculatePrice } from "./CaculatePrice/Double11CaculatePrice";
 import { NormalCaculatePrice } from "./CaculatePrice/NormalCaculatePrice";
 import { OrderProcesser } from "./OrderProcesser/OrderProcesser";
 import { order } from "./Order/Order";
+import { ref } from 'vue'
 
 function Main() {
     const cOrder = new order(22, new Date(), 90)
@@ -18,6 +19,9 @@ function Main() {
 
     orderProcess.process(cOrder)
     console.log(cOrder)
+
+    // Vue type test
+    const testRef = ref() as Ref<string>
 }
 
 Main()
